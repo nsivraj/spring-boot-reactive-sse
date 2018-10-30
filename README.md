@@ -29,6 +29,10 @@ GET __/stock/transaction__
 
 ``` curl -v http://localhost:8080/stock/transaction```
 
+## For SSL
+cd src/main/resources
+keytool -genkey -keyalg RSA -alias streamingserver -keystore keystore.jks -deststoretype pkcs12 -storepass password -validity 2000 -keysize 2048
+
 
 https://github.com/mohitsinha/spring-boot-reactive-sse.git
 
@@ -37,4 +41,5 @@ https://medium.com/@nithinmallya4/processing-streaming-data-with-spring-webflux-
 https://medium.com/vividcode/spring-5-webflux-with-server-sent-events-707be6156909
 
 https://github.com/eugenp/tutorials
+
 
