@@ -28,8 +28,10 @@ repositories {
 
 
 dependencies {
+	compile('org.eclipse.jetty:jetty-alpn-conscrypt-server')
+	compile('org.eclipse.jetty.http2:http2-server')
 	compile('org.springframework.boot:spring-boot-starter-webflux')
-	compile('org.springframework.boot:spring-boot-starter-tomcat')
+	compile('org.springframework.boot:spring-boot-starter-jetty')
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
