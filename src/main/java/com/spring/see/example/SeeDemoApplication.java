@@ -27,6 +27,18 @@ public class SeeDemoApplication {
     List<Stock> stockList = new ArrayList<>();
     List<String> stockNames = Arrays.asList("mango,banana,guava,infinity".split(","));
 
+    // @Bean
+    // public EmbeddedServletContainerCustomizer tomcatCustomizer() {
+    //     return (container) -> {
+    //         if (container instanceof TomcatEmbeddedServletContainerFactory) {
+    //             ((TomcatEmbeddedServletContainerFactory) container)
+    //                     .addConnectorCustomizers((connector) -> {
+    //                 connector.addUpgradeProtocol(new Http2Protocol());
+    //             });
+    //         }
+    //     };
+    // }
+
     @Bean
     CommandLineRunner commandLineRunner() {
         return args -> {
